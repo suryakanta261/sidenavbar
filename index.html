@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">Navigation Bar</div>
+            <div class="menu-toggle">&#9776;</div>
+            <div class="nav-links">
+                <a href="#" onclick="changeContent('Home')">Home</a>
+                <div class="dropdown">
+                    <a href="#" onclick="changeContent('Services')">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="changeContent('Web Design')">Web Design</a>
+                        <br>
+                        <a href="#" onclick="changeContent('Graphic Design')">Graphic Design</a>
+                        <br>
+                        <a href="#" onclick="changeContent('SEO')">SEO</a>
+                    </div>
+                </div>
+                <a href="#" onclick="changeContent('About')">About</a>
+                <br>
+                <a href="#" onclick="changeContent('Contact')">Contact</a>
+            </div>
+        </nav>
+
+        <div class="content">
+            <p id="main-content">Welcome to the .</p>
+        </div>
+
+        <div class="logo-right">
+            <img src="home.jgp" alt="Logo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
